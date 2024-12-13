@@ -46,14 +46,14 @@ namespace CareerGuidance
         {
             careerGuidanceSystem.Navigate("Yes");
             UpdateUI();
-            panelGraph.Invalidate();
+            //panelGraph.Invalidate();
         }
 
         private void btnNo_Click(object sender, EventArgs e)
         {
             careerGuidanceSystem.Navigate("No");
             UpdateUI();
-            panelGraph.Invalidate();
+            //panelGraph.Invalidate();
         }
         private void PopulateTreeView()
         {
@@ -82,7 +82,7 @@ namespace CareerGuidance
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            DrawGraph(e.Graphics);
+            //DrawGraph(e.Graphics);
         }
         private void DrawGraph(Graphics g)
         {

@@ -34,7 +34,6 @@
             this.lblQuestion = new System.Windows.Forms.Label();
             this.btnNo = new System.Windows.Forms.Button();
             this.btnYes = new System.Windows.Forms.Button();
-            this.panelGraph = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // btnRestart
@@ -101,14 +100,6 @@
             this.btnYes.UseVisualStyleBackColor = false;
             this.btnYes.Click += new System.EventHandler(this.btnYes_Click);
             // 
-            // panelGraph
-            // 
-            this.panelGraph.Location = new System.Drawing.Point(50, 412);
-            this.panelGraph.Name = "panelGraph";
-            this.panelGraph.Size = new System.Drawing.Size(1335, 280);
-            this.panelGraph.TabIndex = 95;
-            this.panelGraph.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -116,7 +107,6 @@
             this.BackgroundImage = global::CareerGuidance.Properties.Resources.images__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1416, 704);
-            this.Controls.Add(this.panelGraph);
             this.Controls.Add(this.btnYes);
             this.Controls.Add(this.btnNo);
             this.Controls.Add(this.lblQuestion);
@@ -139,6 +129,5 @@
         private System.Windows.Forms.Label lblQuestion;
         private System.Windows.Forms.Button btnNo;
         private System.Windows.Forms.Button btnYes;
-        private System.Windows.Forms.Panel panelGraph;
     }
 }
