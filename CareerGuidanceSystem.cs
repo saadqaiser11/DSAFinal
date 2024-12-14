@@ -36,6 +36,21 @@ namespace CareerGuidance
             yesNode.Children.Add("Yes", logicalThinkingNode);
             yesNode.Children.Add("No", teamWorkNode);
 
+            // Third level under "teamWorkNode"
+            var leadershipNode = new DecisionTreeNode("Do you enjoy taking leadership roles?");
+            var collaborationNode = new DecisionTreeNode("Do you prefer collaborative environments?");
+
+            teamWorkNode.Children.Add("Yes", leadershipNode);
+            teamWorkNode.Children.Add("No", collaborationNode);
+
+            // Fourth level under "leadershipNode"
+            leadershipNode.Children.Add("Yes", new DecisionTreeNode("Team Leader"));
+            leadershipNode.Children.Add("No", new DecisionTreeNode("Project Coordinator"));
+
+            // Fourth level under "collaborationNode"
+            collaborationNode.Children.Add("Yes", new DecisionTreeNode("Team Player"));
+            collaborationNode.Children.Add("No", new DecisionTreeNode("Independent Contributor"));
+
             // Third level under "logicalThinkingNode"
             var problemSolvingNode = new DecisionTreeNode("Do you enjoy problem-solving?");
             var mathAnalysisNode = new DecisionTreeNode("Are you good at math analysis?");
@@ -128,6 +143,7 @@ namespace CareerGuidance
             intermediateNode7.Children.Add("Yes", new DecisionTreeNode("Architect"));
             intermediateNode7.Children.Add("No", new DecisionTreeNode("Logistics Manager"));
         }
+
 
 
 

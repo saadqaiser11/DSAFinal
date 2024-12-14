@@ -30,7 +30,6 @@
         {
             this.btnRestart = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.treeViewDecisionTree = new System.Windows.Forms.TreeView();
             this.lblQuestion = new System.Windows.Forms.Label();
             this.btnNo = new System.Windows.Forms.Button();
             this.btnYes = new System.Windows.Forms.Button();
@@ -39,7 +38,7 @@
             // btnRestart
             // 
             this.btnRestart.BackColor = System.Drawing.Color.OrangeRed;
-            this.btnRestart.Location = new System.Drawing.Point(1095, 314);
+            this.btnRestart.Location = new System.Drawing.Point(1044, 300);
             this.btnRestart.Name = "btnRestart";
             this.btnRestart.Size = new System.Drawing.Size(163, 51);
             this.btnRestart.TabIndex = 1;
@@ -59,20 +58,13 @@
             this.label2.TabIndex = 90;
             this.label2.Text = "So, Here You Go!!!";
             // 
-            // treeViewDecisionTree
-            // 
-            this.treeViewDecisionTree.Location = new System.Drawing.Point(69, 119);
-            this.treeViewDecisionTree.Name = "treeViewDecisionTree";
-            this.treeViewDecisionTree.Size = new System.Drawing.Size(406, 220);
-            this.treeViewDecisionTree.TabIndex = 91;
-            // 
             // lblQuestion
             // 
             this.lblQuestion.AutoSize = true;
             this.lblQuestion.BackColor = System.Drawing.Color.White;
             this.lblQuestion.Font = new System.Drawing.Font("Modern No. 20", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuestion.ForeColor = System.Drawing.Color.Red;
-            this.lblQuestion.Location = new System.Drawing.Point(587, 213);
+            this.lblQuestion.Location = new System.Drawing.Point(405, 208);
             this.lblQuestion.Name = "lblQuestion";
             this.lblQuestion.Size = new System.Drawing.Size(155, 53);
             this.lblQuestion.TabIndex = 92;
@@ -81,7 +73,7 @@
             // btnNo
             // 
             this.btnNo.BackColor = System.Drawing.Color.OrangeRed;
-            this.btnNo.Location = new System.Drawing.Point(860, 314);
+            this.btnNo.Location = new System.Drawing.Point(629, 300);
             this.btnNo.Name = "btnNo";
             this.btnNo.Size = new System.Drawing.Size(163, 51);
             this.btnNo.TabIndex = 93;
@@ -92,7 +84,7 @@
             // btnYes
             // 
             this.btnYes.BackColor = System.Drawing.Color.OrangeRed;
-            this.btnYes.Location = new System.Drawing.Point(643, 314);
+            this.btnYes.Location = new System.Drawing.Point(225, 300);
             this.btnYes.Name = "btnYes";
             this.btnYes.Size = new System.Drawing.Size(163, 51);
             this.btnYes.TabIndex = 94;
@@ -110,7 +102,6 @@
             this.Controls.Add(this.btnYes);
             this.Controls.Add(this.btnNo);
             this.Controls.Add(this.lblQuestion);
-            this.Controls.Add(this.treeViewDecisionTree);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnRestart);
             this.Name = "Main";
@@ -125,7 +116,6 @@
 
         private System.Windows.Forms.Button btnRestart;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TreeView treeViewDecisionTree;
         private System.Windows.Forms.Label lblQuestion;
         private System.Windows.Forms.Button btnNo;
         private System.Windows.Forms.Button btnYes;

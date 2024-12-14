@@ -19,9 +19,24 @@ namespace CareerGuidance
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Main main = new Main();
-            main.Show();
+            // Validate if the txtName field is empty
+            if (string.IsNullOrWhiteSpace(txtName.Text))
+            {
+                // Show a message box if the field is empty
+                MessageBox.Show("Please enter your name to proceed.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                // Hide the current form and show the Main form
+                this.Hide();
+                Main main = new Main();
+                main.Show();
+            }
+
+        }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

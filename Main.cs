@@ -57,9 +57,9 @@ namespace CareerGuidance
         }
         private void PopulateTreeView()
         {
-            treeViewDecisionTree.Nodes.Clear();
+            //treeViewDecisionTree.Nodes.Clear();
             var rootNode = new TreeNode("Start");
-            treeViewDecisionTree.Nodes.Add(rootNode);
+            //treeViewDecisionTree.Nodes.Add(rootNode);
 
             AddNodesToTree(rootNode, careerGuidanceSystem.Root);
         }
