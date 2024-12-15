@@ -100,5 +100,8 @@
   <ItemGroup>
     <None Include="Resources\images %282%29.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\What-is-career-guidance-importance-benefits-removebg-preview.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

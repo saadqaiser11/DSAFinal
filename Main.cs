@@ -18,13 +18,7 @@ namespace CareerGuidance
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            careerGuidanceSystem.Restart();
-            UpdateUI();
-            btnYes.Enabled = true;
-            btnNo.Enabled = true;
-        }
+        
 
         private void Main_Load(object sender, EventArgs e)
         {
@@ -42,19 +36,7 @@ namespace CareerGuidance
                 btnNo.Enabled = false;
             }
         }
-        private void btnYes_Click(object sender, EventArgs e)
-        {
-            careerGuidanceSystem.Navigate("Yes");
-            UpdateUI();
-            //panelGraph.Invalidate();
-        }
-
-        private void btnNo_Click(object sender, EventArgs e)
-        {
-            careerGuidanceSystem.Navigate("No");
-            UpdateUI();
-            //panelGraph.Invalidate();
-        }
+        
         private void PopulateTreeView()
         {
             //treeViewDecisionTree.Nodes.Clear();
@@ -96,6 +78,30 @@ namespace CareerGuidance
             g.DrawLine(Pens.Black, 150, 75, 200, 75); // Connection between Node 1 and Node 2
         }
 
+        private void label3_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void btnYes_Click_1(object sender, EventArgs e)
+        {
+            careerGuidanceSystem.Navigate("Yes");
+            UpdateUI();
+        }
+
+        private void btnNo_Click_1(object sender, EventArgs e)
+        {
+            careerGuidanceSystem.Navigate("No");
+            UpdateUI();
+            //panelGraph.Invalidate();
+        }
+
+        private void btnRestart_Click(object sender, EventArgs e)
+        {
+            careerGuidanceSystem.Restart();
+            UpdateUI();
+            btnYes.Enabled = true;
+            btnNo.Enabled = true;
+        }
     }
 }
