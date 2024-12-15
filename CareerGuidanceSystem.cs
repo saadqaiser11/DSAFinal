@@ -10,11 +10,12 @@ namespace CareerGuidance
     {
         public DecisionTreeNode Root { get; private set; }
         private DecisionTreeNode currentNode;
-
+        public bool IsAtRecommendation { get; private set; }
         public CareerGuidanceSystem()
         {
             BuildTree();
             currentNode = Root;
+            IsAtRecommendation = false;
         }
 
         private void BuildTree()
@@ -159,12 +160,15 @@ namespace CareerGuidance
             if (currentNode.Children.ContainsKey(answer))
             {
                 currentNode = currentNode.Children[answer];
+                // Update recommendation state
+                IsAtRecommendation = currentNode.CareerRecommendation != null;
             }
         }
 
         public void Restart()
         {
             currentNode = Root;
+            IsAtRecommendation = false;
         }
     }
 }

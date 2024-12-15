@@ -9,13 +9,19 @@ namespace CareerGuidance
     public class DecisionTreeNode
     {
         public string Question { get; set; }
-        public Dictionary<string, DecisionTreeNode> Children { get; set; }
         public string CareerRecommendation { get; set; }
+        public Dictionary<string, DecisionTreeNode> Children { get; set; }
 
-        public DecisionTreeNode(string question = null, string recommendation = null)
+        public DecisionTreeNode(string content)
         {
-            Question = question;
-            CareerRecommendation = recommendation;
+            if (content.Contains("Do you") || content.Contains("?"))
+            {
+                Question = content;
+            }
+            else
+            {
+                CareerRecommendation = content;
+            }
             Children = new Dictionary<string, DecisionTreeNode>();
         }
     }

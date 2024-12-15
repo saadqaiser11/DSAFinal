@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace CareerGuidance
 {
@@ -35,6 +36,8 @@ namespace CareerGuidance
                 btnYes.Enabled = false;
                 btnNo.Enabled = false;
             }
+            btnYes.Visible = !careerGuidanceSystem.IsAtRecommendation;
+            btnNo.Visible = !careerGuidanceSystem.IsAtRecommendation;
         }
         
         private void PopulateTreeView()
